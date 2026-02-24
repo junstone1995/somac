@@ -1,0 +1,44 @@
+/* Home */
+"app.name"                      = "Somac";
+"home.subtitle"                 = "Golden Ratio Soju + Beer";
+"home.soju_row"                 = "Soju";
+"home.beer_row"                 = "Beer";
+"home.measure_button"           = "Measure Beer Glass";
+"home.lidar_note"               = "Requires LiDAR — iPhone 12 Pro or later";
+
+/* Measure screen */
+"measure.nav_title"             = "Measure Beer Glass";
+"measure.step1_label"           = "Step 1 of 2 — Bottom Rim";
+"measure.step2_label"           = "Step 2 of 2 — Top Rim";
+"measure.done_label"            = "Done";
+"measure.step1_instruction"     = "Point at the center of the beer glass bottom rim and tap.";
+"measure.step1_edge"            = "Now tap the edge of the bottom rim.";
+"measure.step2_instruction"     = "Point at the center of the top rim and tap.";
+"measure.step2_edge"            = "Now tap the edge of the top rim.";
+"measure.done_instruction"      = "Measurement complete!";
+"measure.show_guide"            = "Show Guide";
+"measure.reset"                 = "Reset";
+"measure.error_title"           = "Measurement Error";
+"measure.error_message"         = "Could not detect a surface. Please tap closer to the glass rim.";
+"measure.retry"                 = "Retry";
+
+/* Guide screen */
+"guide.nav_title"               = "Somac Guide";
+"guide.title"                   = "Golden Ratio Somac";
+"guide.subtitle"                = "Soju 1 : Beer 2";
+"glass.soju"                    = "Soju Glass";
+"glass.beer"                    = "Beer Glass";
+"guide.fill_to_here"            = "Fill to here";
+"guide.tip"                     = "Pour soju first, then add beer.\nTilt the beer glass slightly to reduce foam.";
+"guide.measure_again"           = "Measure Again";
+
+/* Details */
+"details.glass_height"          = "Glass height";
+"details.radius"                = "Bottom / Top radius";
+"details.capacity"              = "Glass capacity";
+"details.beer_fill_height"      = "Beer fill height";
+
+/* Guide screen — info bar */
+"guide.soju_detail"             = "Half glass · 25ml";
+"guide.beer_fill_fmt"           = "%.1fcm · 50ml";
+"guide.glass_height_fmt"        = "H %.1fcm";
