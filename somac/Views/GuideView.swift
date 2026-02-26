@@ -2,11 +2,12 @@
 //  GuideView.swift
 //  somac
 //
-//  전체 화면 = 맥주잔 높이
+//  폰을 잔 옆에 세우면 화면 = 물리적 자(ruler)
+//  460 PPI 기준으로 AR 측정 높이를 실제 mm 1:1 매핑
 //  아래부터:
-//    ① 소주 25ml 선
-//    ② 소주+맥주 75ml 선 (50ml 더 부으면 됨)
-//  폰을 세우고 옆에 잔을 세워서 선에 맞게 따른다.
+//    ① 파란 선: 소주 25ml 채울 높이
+//    ② 노란 선: 소주+맥주 75ml 채울 높이 (맥주 50ml 더 부으면 됨)
+//  선 위치 = 실제 잔의 액체 높이와 물리적으로 일치
 //
 
 import SwiftUI
@@ -22,22 +23,10 @@ struct GuideView: View {
     @State private var fillProgress: CGFloat = 0   // 0→1 애니메이션
     @State private var linesVisible  = false
 
-    // 모든 LiDAR iPhone(Pro) 은 460 PPI
-    private static let screenPPI: Double = 460
-
-    // 기기 화면의 물리적 높이 (mm)
-    private var physScreenH_mm: Double {
-        Double(UIScreen.main.nativeBounds.height) / Self.screenPPI * 25.4
-    }
-
     /// 화면 좌표계에서 `vol` ml 가 채워지는 높이(pt, 아래에서부터)
+    /// 잔 높이를 화면 높이에 1:1 매핑 → 폰 옆에 잔을 세우면 선 위치가 잔의 채울 높이와 비례
     private func fillPts(vol: Double, screenH: CGFloat) -> CGFloat {
-        let glassH_mm = glass.height * 1000
-        let fillH_mm  = glass.fillHeight(for: vol) * 1000
-        // 잔이 화면보다 짧으면 실제 물리 크기로 1:1 매핑
-        // 잔이 화면보다 길면 화면에 맞게 축소
-        let refH_mm   = max(physScreenH_mm, glassH_mm)
-        return CGFloat(fillH_mm / refH_mm) * screenH
+        CGFloat(glass.fillHeight(for: vol) / glass.height) * screenH
     }
 
     var body: some View {
