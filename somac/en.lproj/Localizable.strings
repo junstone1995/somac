@@ -4,23 +4,19 @@
 "home.soju_row"                 = "Soju";
 "home.beer_row"                 = "Beer";
 "home.measure_button"           = "Measure Beer Glass";
-"home.lidar_note"               = "Requires LiDAR — iPhone 12 Pro or later";
+"home.ruler_note"               = "Place your phone next to the glass to measure";
 
 /* Measure screen */
 "measure.nav_title"             = "Measure Beer Glass";
-"measure.step1_label"           = "Step 1 of 2 — Bottom Rim";
-"measure.step2_label"           = "Step 2 of 2 — Top Rim";
-"measure.done_label"            = "Done";
-"measure.step1_instruction"     = "Point at the center of the beer glass bottom rim and tap.";
-"measure.step1_edge"            = "Now tap the edge of the bottom rim.";
-"measure.step2_instruction"     = "Point at the center of the top rim and tap.";
-"measure.step2_edge"            = "Now tap the edge of the top rim.";
-"measure.done_instruction"      = "Measurement complete!";
+"measure.top_rim"               = "Top";
+"measure.bottom_rim"            = "Bottom";
+"measure.top_diameter"          = "Top diameter";
+"measure.bottom_diameter"       = "Bottom diameter";
+"measure.height_label"          = "Height";
+"measure.top_dia_label"         = "Top dia.";
+"measure.bottom_dia_label"      = "Bottom dia.";
+"measure.back"                  = "Back";
 "measure.show_guide"            = "Show Guide";
-"measure.reset"                 = "Reset";
-"measure.error_title"           = "Measurement Error";
-"measure.error_message"         = "Could not detect a surface. Please tap closer to the glass rim.";
-"measure.retry"                 = "Retry";
 
 /* Guide screen */
 "guide.nav_title"               = "Somac Guide";

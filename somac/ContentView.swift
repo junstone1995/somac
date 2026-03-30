@@ -65,7 +65,7 @@ struct ContentView: View {
             Button {
                 path.append(.measure)
             } label: {
-                Label("home.measure_button", systemImage: "camera.viewfinder")
+                Label("home.measure_button", systemImage: "ruler")
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding()
@@ -74,7 +74,7 @@ struct ContentView: View {
             .tint(.orange)
             .padding(.horizontal, 32)
 
-            Text("home.lidar_note")
+            Text("home.ruler_note")
                 .font(.caption2)
                 .foregroundColor(.secondary)
 

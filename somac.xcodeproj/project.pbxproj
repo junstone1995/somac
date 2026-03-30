@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		B412AB622F4D605C0091FD7B /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B412AB602F4D605C0091FD7B /* ARKit.framework */; };
 		B412AB632F4D605C0091FD7B /* RealityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B412AB612F4D605C0091FD7B /* RealityKit.framework */; };
+		B47AF16D2F7A0AE200A5EC39 /* PROJECT_STRUCTURE.md in Resources */ = {isa = PBXBuildFile; fileRef = B47AF16C2F7A0AE200A5EC39 /* PROJECT_STRUCTURE.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B412AB392F4D605C0091FD7B /* somac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = somac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B412AB602F4D605C0091FD7B /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		B412AB612F4D605C0091FD7B /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
+		B47AF16C2F7A0AE200A5EC39 /* PROJECT_STRUCTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_STRUCTURE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -57,6 +59,7 @@
 				B412AB3B2F4D605C0091FD7B /* somac */,
 				B412AB642F4D605C0091FD7B /* Frameworks */,
 				B412AB3A2F4D605C0091FD7B /* Products */,
+				B47AF16C2F7A0AE200A5EC39 /* PROJECT_STRUCTURE.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47AF16D2F7A0AE200A5EC39 /* PROJECT_STRUCTURE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
