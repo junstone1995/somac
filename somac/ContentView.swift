@@ -5,92 +5,67 @@
 
 import SwiftUI
 
-// MARK: - Navigation Destination
+// MARK: - App Theme
 
-enum AppRoute: Hashable {
-    case measure
-    case guide(GlassMeasurement)
+enum AppTheme {
+    static let gold       = Color(red: 0.85, green: 0.68, blue: 0.32)
+    static let darkBg     = Color(red: 0.07, green: 0.07, blue: 0.09)
+    static let cardBg     = Color(red: 0.12, green: 0.12, blue: 0.14)
+    static let subtleText = Color(white: 0.55)
 }
 
-extension GlassMeasurement: Hashable {
-    static func == (lhs: GlassMeasurement, rhs: GlassMeasurement) -> Bool {
-        lhs.r1 == rhs.r1 && lhs.r2 == rhs.r2 && lhs.height == rhs.height
+// MARK: - Tab
+
+enum AppTab: Int, CaseIterable {
+    case compare = 0
+    case brew    = 1
+    case cabinet = 2
+
+    var title: String {
+        switch self {
+        case .compare: return String(localized: "tab.compare")
+        case .brew:    return String(localized: "tab.brew")
+        case .cabinet: return String(localized: "tab.cabinet")
+        }
     }
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(r1); hasher.combine(r2); hasher.combine(height)
+
+    var icon: String {
+        switch self {
+        case .compare: return "chart.bar.fill"
+        case .brew:    return "wineglass.fill"
+        case .cabinet: return "cabinet.fill"
+        }
     }
 }
 
-// MARK: - Home Screen
+// MARK: - Root View
 
 struct ContentView: View {
-    @State private var path: [AppRoute] = []
+    @State private var selectedTab: AppTab = .brew
+    @State private var cabinetStore = CabinetStore()
 
     var body: some View {
-        NavigationStack(path: $path) {
-            homeScreen
-                .navigationDestination(for: AppRoute.self) { route in
-                    switch route {
-                    case .measure:
-                        MeasureView { glass in path.append(.guide(glass)) }
-                    case .guide(let glass):
-                        GuideView(glass: glass)
-                    }
+        TabView(selection: $selectedTab) {
+            CompareView(store: cabinetStore)
+                .tabItem {
+                    Label(String(localized: "tab.compare"), systemImage: "chart.bar.fill")
                 }
+                .tag(AppTab.compare)
+
+            BrewView()
+                .tabItem {
+                    Label(String(localized: "tab.brew"), systemImage: "wineglass.fill")
+                }
+                .tag(AppTab.brew)
+
+            MyCabinetView(store: cabinetStore)
+                .tabItem {
+                    Label(String(localized: "tab.cabinet"), systemImage: "cabinet.fill")
+                }
+                .tag(AppTab.cabinet)
         }
-    }
-
-    private var homeScreen: some View {
-        VStack(spacing: 40) {
-            Spacer()
-
-            VStack(spacing: 8) {
-                Text("🍺").font(.system(size: 72))
-                Text("app.name").font(.largeTitle.bold())
-                Text("home.subtitle")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-
-            VStack(spacing: 12) {
-                ratioRow(icon: "drop.fill",  color: .blue,   key: "home.soju_row", amount: "25 ml")
-                ratioRow(icon: "mug.fill",   color: .yellow, key: "home.beer_row", amount: "50 ml")
-            }
-            .padding()
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
-            .padding(.horizontal, 32)
-
-            Spacer()
-
-            Button {
-                path.append(.measure)
-            } label: {
-                Label("home.measure_button", systemImage: "ruler")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(.orange)
-            .padding(.horizontal, 32)
-
-            Text("home.ruler_note")
-                .font(.caption2)
-                .foregroundColor(.secondary)
-
-            Spacer().frame(height: 20)
-        }
-        .navigationBarHidden(true)
-    }
-
-    private func ratioRow(icon: String, color: Color,
-                          key: LocalizedStringKey, amount: String) -> some View {
-        HStack {
-            Image(systemName: icon).foregroundColor(color)
-            Text(key)
-            Spacer()
-            Text(amount).bold()
-        }
+        .tint(AppTheme.gold)
+        .preferredColorScheme(.dark)
     }
 }
 

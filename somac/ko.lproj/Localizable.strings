@@ -1,40 +1,108 @@
-/* 앱 홈 */
-"app.name"                      = "소맥";
-"home.subtitle"                 = "황금비율 소주 + 맥주";
-"home.soju_row"                 = "소주";
-"home.beer_row"                 = "맥주";
-"home.measure_button"           = "맥주잔 측정하기";
-"home.ruler_note"               = "폰을 잔 옆에 세워서 측정합니다";
+/* 탭 */
+"tab.compare"                   = "비교";
+"tab.brew"                      = "제조";
+"tab.cabinet"                   = "내 술장";
+
+/* 카테고리 */
+"category.somac"                = "소맥";
+"category.highball"             = "하이볼";
+"category.cocktail"             = "칵테일";
+"category.custom"               = "커스텀";
+
+/* 레시피 이름 */
+"recipe.somac_golden"           = "황금비율";
+"recipe.somac_strong"           = "진한 소맥";
+"recipe.somac_light"            = "약한 소맥";
+"recipe.highball_classic"       = "이자카야 스타일";
+"recipe.highball_strong"        = "진한 하이볼";
+"recipe.highball_light"         = "가벼운 하이볼";
+"recipe.gin_tonic"              = "진토닉";
+"recipe.jack_coke"              = "잭콕";
+"recipe.moscow_mule"            = "모스코뮬";
+
+/* 재료 */
+"ingredient.soju"               = "소주";
+"ingredient.beer"               = "맥주";
+"ingredient.whiskey"            = "위스키";
+"ingredient.soda"               = "탄산수";
+"ingredient.gin"                = "진";
+"ingredient.tonic"              = "토닉워터";
+"ingredient.jack"               = "잭다니엘";
+"ingredient.cola"               = "콜라";
+"ingredient.vodka"              = "보드카";
+"ingredient.ginger_beer"        = "진저비어";
+
+/* 통화 */
+"currency.jpy"                  = "일본 엔";
+"currency.usd"                  = "미국 달러";
+"currency.eur"                  = "유로";
+"currency.gbp"                  = "영국 파운드";
+"currency.cny"                  = "중국 위안";
+"currency.thb"                  = "태국 바트";
+
+/* 비교 화면 */
+"compare.title"                 = "가격 비교";
+"compare.search_placeholder"    = "술 이름으로 검색";
+"compare.domestic_avg_label"    = "국내 평균가";
+"compare.tap_to_compare"        = "탭하여 비교";
+"compare.detail_title"          = "가격 비교";
+"compare.country"               = "국가";
+"compare.foreign_price"         = "해외에서 본 가격";
+"compare.calculate"             = "비교하기";
+"compare.foreign"               = "해외 가격";
+"compare.converted"             = "원화 환산";
+"compare.domestic_avg"          = "국내 평균가";
+"compare.savings"               = "절약 금액";
+"compare.cheaper_abroad"        = "해외 구매가 더 저렴합니다";
+"compare.cheaper_domestic"      = "국내 구매가 더 저렴합니다";
+"compare.save"                  = "비교 내역 저장";
+"compare.cat_whiskey"           = "위스키";
+"compare.cat_wine"              = "와인";
+"compare.cat_sake"              = "사케";
+"compare.cat_cognac"            = "코냑";
+"compare.cat_liqueur"           = "리큐르";
+"compare.cat_vodka"             = "보드카";
+
+/* 제조 화면 */
+"brew.title"                    = "제조";
+"brew.header"                   = "무엇을 만들까요?";
+"brew.header_sub"               = "카테고리를 선택하세요";
+"brew.no_presets"               = "프리셋이 없습니다";
 
 /* 측정 화면 */
-"measure.nav_title"             = "맥주잔 측정";
-"measure.top_rim"               = "상단";
-"measure.bottom_rim"            = "하단";
-"measure.top_diameter"          = "상단 지름";
-"measure.bottom_diameter"       = "하단 지름";
-"measure.height_label"          = "높이";
-"measure.top_dia_label"         = "상단 지름";
-"measure.bottom_dia_label"      = "하단 지름";
-"measure.back"                  = "뒤로";
+"measure.nav_title"             = "잔 측정";
+"measure.step1_label"           = "1단계 / 2단계 — 바닥 테두리";
+"measure.step2_label"           = "2단계 / 2단계 — 상단 테두리";
+"measure.done_label"            = "측정 완료";
+"measure.step1_instruction"     = "잔 바닥 테두리 중앙을 가리키고 탭하세요.";
+"measure.step1_edge"            = "이제 바닥 테두리 끝부분을 탭하세요.";
+"measure.step2_instruction"     = "잔 상단 테두리 중앙을 가리키고 탭하세요.";
+"measure.step2_edge"            = "이제 상단 테두리 끝부분을 탭하세요.";
+"measure.done_instruction"      = "측정이 완료되었습니다!";
 "measure.show_guide"            = "가이드 보기";
+"measure.reset"                 = "다시 시작";
+"measure.error_title"           = "측정 오류";
+"measure.error_message"         = "표면을 감지하지 못했습니다. 잔 테두리에 더 가까이서 탭해보세요.";
+"measure.retry"                 = "다시 시도";
 
 /* 가이드 화면 */
-"guide.nav_title"               = "소맥 가이드";
-"guide.title"                   = "소맥 황금비율";
-"guide.subtitle"                = "소주 1 : 맥주 2";
-"glass.soju"                    = "소주잔";
-"glass.beer"                    = "맥주잔";
-"guide.fill_to_here"            = "여기까지 따르세요";
-"guide.tip"                     = "소주를 먼저 따른 뒤 맥주를 부어주세요.\n맥주잔을 살짝 기울이면 거품이 덜 납니다.";
-"guide.measure_again"           = "다시 측정하기";
-
-/* 상세 정보 */
-"details.glass_height"          = "잔 높이";
-"details.radius"                = "바닥 / 상단 반지름";
-"details.capacity"              = "잔 용량";
-"details.beer_fill_height"      = "맥주 채울 높이";
-
-/* 가이드 화면 — 정보 바 */
-"guide.soju_detail"             = "반잔 · 25ml";
-"guide.beer_fill_fmt"           = "%.1fcm · 50ml";
 "guide.glass_height_fmt"        = "잔 높이 %.1fcm";
+
+/* 내 술장 */
+"cabinet.title"                 = "내 술장";
+"cabinet.favorites"             = "즐겨찾기";
+"cabinet.history"               = "비교 내역";
+"cabinet.empty_favorites"       = "저장된 술이 없습니다";
+"cabinet.empty_history"         = "비교 내역이 없습니다";
+"cabinet.unnamed"               = "이름 없음";
+"cabinet.add_title"             = "술 추가";
+"cabinet.add_name"              = "이름";
+"cabinet.name_placeholder"      = "술 이름을 입력하세요";
+"cabinet.add_category"          = "종류";
+"cabinet.category_placeholder"  = "위스키, 소주, 와인 등";
+"cabinet.add_note"              = "메모";
+"cabinet.note_placeholder"      = "간단한 메모를 남겨보세요";
+
+/* 공통 */
+"cancel"                        = "취소";
+"save"                          = "저장";

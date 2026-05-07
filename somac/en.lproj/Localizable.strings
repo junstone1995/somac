@@ -1,40 +1,108 @@
-/* Home */
-"app.name"                      = "Somac";
-"home.subtitle"                 = "Golden Ratio Soju + Beer";
-"home.soju_row"                 = "Soju";
-"home.beer_row"                 = "Beer";
-"home.measure_button"           = "Measure Beer Glass";
-"home.ruler_note"               = "Place your phone next to the glass to measure";
+/* Tabs */
+"tab.compare"                   = "Compare";
+"tab.brew"                      = "Brew";
+"tab.cabinet"                   = "My Cabinet";
+
+/* Categories */
+"category.somac"                = "Somac";
+"category.highball"             = "Highball";
+"category.cocktail"             = "Cocktail";
+"category.custom"               = "Custom";
+
+/* Recipe names */
+"recipe.somac_golden"           = "Golden Ratio";
+"recipe.somac_strong"           = "Strong Somac";
+"recipe.somac_light"            = "Light Somac";
+"recipe.highball_classic"       = "Izakaya Style";
+"recipe.highball_strong"        = "Strong Highball";
+"recipe.highball_light"         = "Light Highball";
+"recipe.gin_tonic"              = "Gin & Tonic";
+"recipe.jack_coke"              = "Jack & Coke";
+"recipe.moscow_mule"            = "Moscow Mule";
+
+/* Ingredients */
+"ingredient.soju"               = "Soju";
+"ingredient.beer"               = "Beer";
+"ingredient.whiskey"            = "Whiskey";
+"ingredient.soda"               = "Soda Water";
+"ingredient.gin"                = "Gin";
+"ingredient.tonic"              = "Tonic Water";
+"ingredient.jack"               = "Jack Daniel's";
+"ingredient.cola"               = "Cola";
+"ingredient.vodka"              = "Vodka";
+"ingredient.ginger_beer"        = "Ginger Beer";
+
+/* Currency */
+"currency.jpy"                  = "Japanese Yen";
+"currency.usd"                  = "US Dollar";
+"currency.eur"                  = "Euro";
+"currency.gbp"                  = "British Pound";
+"currency.cny"                  = "Chinese Yuan";
+"currency.thb"                  = "Thai Baht";
+
+/* Compare screen */
+"compare.title"                 = "Price Compare";
+"compare.search_placeholder"    = "Search by name";
+"compare.domestic_avg_label"    = "Domestic Avg.";
+"compare.tap_to_compare"        = "Tap to compare";
+"compare.detail_title"          = "Price Compare";
+"compare.country"               = "Country";
+"compare.foreign_price"         = "Price you saw abroad";
+"compare.calculate"             = "Compare";
+"compare.foreign"               = "Foreign";
+"compare.converted"             = "Converted (KRW)";
+"compare.domestic_avg"          = "Domestic Avg.";
+"compare.savings"               = "Savings";
+"compare.cheaper_abroad"        = "Cheaper to buy abroad";
+"compare.cheaper_domestic"      = "Cheaper to buy domestically";
+"compare.save"                  = "Save Comparison";
+"compare.cat_whiskey"           = "Whiskey";
+"compare.cat_wine"              = "Wine";
+"compare.cat_sake"              = "Sake";
+"compare.cat_cognac"            = "Cognac";
+"compare.cat_liqueur"           = "Liqueur";
+"compare.cat_vodka"             = "Vodka";
+
+/* Brew screen */
+"brew.title"                    = "Brew";
+"brew.header"                   = "What are we making?";
+"brew.header_sub"               = "Choose a category";
+"brew.no_presets"               = "No presets available";
 
 /* Measure screen */
-"measure.nav_title"             = "Measure Beer Glass";
-"measure.top_rim"               = "Top";
-"measure.bottom_rim"            = "Bottom";
-"measure.top_diameter"          = "Top diameter";
-"measure.bottom_diameter"       = "Bottom diameter";
-"measure.height_label"          = "Height";
-"measure.top_dia_label"         = "Top dia.";
-"measure.bottom_dia_label"      = "Bottom dia.";
-"measure.back"                  = "Back";
+"measure.nav_title"             = "Measure Glass";
+"measure.step1_label"           = "Step 1 of 2 — Bottom Rim";
+"measure.step2_label"           = "Step 2 of 2 — Top Rim";
+"measure.done_label"            = "Done";
+"measure.step1_instruction"     = "Point at the center of the glass bottom rim and tap.";
+"measure.step1_edge"            = "Now tap the edge of the bottom rim.";
+"measure.step2_instruction"     = "Point at the center of the top rim and tap.";
+"measure.step2_edge"            = "Now tap the edge of the top rim.";
+"measure.done_instruction"      = "Measurement complete!";
 "measure.show_guide"            = "Show Guide";
+"measure.reset"                 = "Reset";
+"measure.error_title"           = "Measurement Error";
+"measure.error_message"         = "Could not detect a surface. Please tap closer to the glass rim.";
+"measure.retry"                 = "Retry";
 
 /* Guide screen */
-"guide.nav_title"               = "Somac Guide";
-"guide.title"                   = "Golden Ratio Somac";
-"guide.subtitle"                = "Soju 1 : Beer 2";
-"glass.soju"                    = "Soju Glass";
-"glass.beer"                    = "Beer Glass";
-"guide.fill_to_here"            = "Fill to here";
-"guide.tip"                     = "Pour soju first, then add beer.\nTilt the beer glass slightly to reduce foam.";
-"guide.measure_again"           = "Measure Again";
-
-/* Details */
-"details.glass_height"          = "Glass height";
-"details.radius"                = "Bottom / Top radius";
-"details.capacity"              = "Glass capacity";
-"details.beer_fill_height"      = "Beer fill height";
-
-/* Guide screen — info bar */
-"guide.soju_detail"             = "Half glass · 25ml";
-"guide.beer_fill_fmt"           = "%.1fcm · 50ml";
 "guide.glass_height_fmt"        = "H %.1fcm";
+
+/* My Cabinet */
+"cabinet.title"                 = "My Cabinet";
+"cabinet.favorites"             = "Favorites";
+"cabinet.history"               = "History";
+"cabinet.empty_favorites"       = "No saved drinks yet";
+"cabinet.empty_history"         = "No comparison history";
+"cabinet.unnamed"               = "Unnamed";
+"cabinet.add_title"             = "Add Drink";
+"cabinet.add_name"              = "Name";
+"cabinet.name_placeholder"      = "Enter drink name";
+"cabinet.add_category"          = "Category";
+"cabinet.category_placeholder"  = "Whiskey, Soju, Wine, etc.";
+"cabinet.add_note"              = "Note";
+"cabinet.note_placeholder"      = "Add a short note";
+
+/* Common */
+"cancel"                        = "Cancel";
+"save"                          = "Save";
